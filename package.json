@@ -1,0 +1,55 @@
+{
+  "name": "mushfiqweb-todo",
+  "version": "1.0.0",
+  "description": "A Todo app with Create React App, React Redux, and Firebase",
+  "homepage": "https://mushfiqweb-todo.firebaseapp.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mushfiqweb/mushfiqweb-todo.git"
+  },
+  "author": {
+    "name": "Mushfiqur Rahman",
+    "email": "hello@mushfiqweb.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=8.1.4"
+  },
+  "scripts": {
+    "eject": "react-scripts eject",
+    "build": "run-s build:css build:js",
+    "build:css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "build:js": "cross-env NODE_PATH=. react-scripts build",
+    "start": "run-p start:css start:js",
+    "start:css": "npm run build:css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start:js": "cross-env NODE_PATH=. react-scripts start"    
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "firebase": "^4.1.3",
+    "history": "^4.6.3",
+    "immutable": "^3.8.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "^5.0.0-alpha.6",
+    "react-scripts": "1.0.10",
+    "redux": "^3.7.1",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1",
+    "enzyme": "^2.9.1",
+    "firebase-tools": "^3.9.1",
+    "minx": "r-park/minx.git",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.0.2",
+    "react-test-renderer": "^15.6.1",
+    "sinon": "^2.3.8"
+  }
+}

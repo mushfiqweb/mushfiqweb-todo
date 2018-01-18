@@ -1,0 +1,15 @@
+{
+  "short_name": "A Todo App using React, Redux, and Firebase",
+  "name": "A Todo App using React, Redux, and Firebase",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
