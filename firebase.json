@@ -5,25 +5,37 @@
 
   "hosting": {
     "public": "build",
-    "headers": [
-      {
+    "headers": [{
         "source": "**/*",
-        "headers": [
-          {"key": "X-Content-Type-Options", "value": "nosniff"},
-          {"key": "X-Frame-Options", "value": "DENY"},
-          {"key": "X-UA-Compatible", "value": "ie=edge"},
-          {"key": "X-XSS-Protection", "value": "1; mode=block"}
+        "headers": [{
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "X-Frame-Options",
+            "value": "DENY"
+          },
+          {
+            "key": "X-UA-Compatible",
+            "value": "ie=edge"
+          },
+          {
+            "key": "X-XSS-Protection",
+            "value": "1; mode=block"
+          }
         ]
       },
       {
-        "source": "**/*.@(css|html|js|map)",
-        "headers": [
-          {"key": "Cache-Control", "value": "max-age=3600"}
-        ]
+        "source": "**/*.@(css|html|js|map|png|svg)",
+        "headers": [{
+          "key": "Cache-Control",
+          "value": "max-age=60"
+        }]
       }
     ],
-    "rewrites": [
-      {"source": "**", "destination": "/index.html"}
-    ]
+    "rewrites": [{
+      "source": "**",
+      "destination": "/index.html"
+    }]
   }
 }

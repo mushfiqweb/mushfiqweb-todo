@@ -58,7 +58,7 @@
   color: #555;
 
   &:hover {
-    color: #999;
+    color: rgb(255, 255, 255);
   }
 
   &:active {
@@ -66,7 +66,7 @@
   }
 
   &.active {
-    color: #85bf6b;
+    color: #f74e4e;
   }
 }
 
@@ -88,7 +88,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    border-top: 2px solid #85bf6b;
+    border-top: 2px solid #f74e4e;
     width: 0;
     height: 46%;
     content: '';

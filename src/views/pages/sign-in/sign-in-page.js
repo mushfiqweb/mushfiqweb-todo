@@ -10,13 +10,27 @@ import './sign-in-page.css';
 
 const SignInPage = ({ signInWithGithub, signInWithGoogle, signInWithTwitter, signInWithFacebook }) => {
   return (
-    <div className="g-row sign-in slide-in-bottom">
-      <div className="g-col">
-        <h1 className="sign-in__heading">Sign in</h1>
+    <div className="slide-in-bottom">
+      <div className="login-box">
+        <h1 className="Alegreya">To Get Started...</h1>
+        {/*
         <Button className="sign-in__button" onClick={signInWithFacebook}>Facebook</Button>
         <Button className="sign-in__button" onClick={signInWithGithub}>GitHub</Button>
         <Button className="sign-in__button" onClick={signInWithGoogle}>Google</Button>
         <Button className="sign-in__button" onClick={signInWithTwitter}>Twitter</Button>
+        */}
+        <button className="social-button Alegreya" id="facebook-connect" onClick={signInWithFacebook} >
+          <span>Connect with Facebook</span>
+        </button>
+        <button className="social-button Alegreya" id="google-connect" onClick={signInWithGoogle}>
+          <span>Connect with Google</span>
+        </button>
+        <button className="social-button Alegreya" id="twitter-connect" onClick={signInWithTwitter}>
+          <span>Connect with Twitter</span>
+        </button>
+        <button className="social-button Alegreya" id="github-connect" onClick={signInWithGithub}>
+          <span>Connect with Github</span>
+        </button>
       </div>
     </div>
   );
