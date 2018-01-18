@@ -17,7 +17,7 @@ function TaskList({removeTask, tasks, updateTask}) {
   });
 
   return (
-    <div className="task-list">
+    <div className="task-list fade-in">
       {taskItems}
     </div>
   );

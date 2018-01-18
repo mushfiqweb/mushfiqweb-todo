@@ -24,16 +24,15 @@
     border: 2px solid #eee;
     margin-right: 8px;
     border-radius: 100%;
-    height: 16px;
-    width: 16px;
+    height: 23px;
+    width: 23px;
     content: ' ';
   }
 }
 
 .header__actions {
   @include clearfix;
-  float: right;
-  padding: 8px 0;
+  float: right;  
   line-height: 24px;
 
   li {

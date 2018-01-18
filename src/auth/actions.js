@@ -43,6 +43,10 @@ export function signInSuccess(result) {
 }
 
 
+export function signInWithFacebook() {
+  return authenticate(new firebase.auth.FacebookAuthProvider());
+}
+
 export function signInWithGithub() {
   return authenticate(new firebase.auth.GithubAuthProvider());
 }

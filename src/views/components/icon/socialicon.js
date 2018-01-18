@@ -6,7 +6,7 @@ const Icon = ({ name }) => {
   var cssClasses = '';
   switch (name) {
     case 'google':
-      cssClasses = 'fa fa-google fa-stack-2x';
+      cssClasses = 'fa fa-google-plus-square fa-stack-2x';
       break;
     case 'facebook':
       cssClasses = 'fa fa-facebook fa-stack-2x';

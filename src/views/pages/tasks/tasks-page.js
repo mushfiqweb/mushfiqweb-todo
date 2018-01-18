@@ -67,7 +67,7 @@ export class TasksPage extends Component {
 
   render() {
     return (
-      <div className="g-row">
+      <div className="g-row slide-in-top">
         <div className="g-col">
           <TaskForm handleSubmit={this.props.createTask} />
         </div>

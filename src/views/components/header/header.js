@@ -7,10 +7,10 @@ import './header.css';
 
 
 const Header = ({ authenticated, signOut, authType }) => (
-  <header className="header">
+  <header className="header slide-in-top">
     <div className="g-row">
       <div className="g-col">
-        <h1 className="header__title">A Simple Todo App</h1>
+        <h1 className="header__title Alegreya">A Simple Todo App</h1>
 
         <ul className="header__actions">
           {authenticated ? <li><Button onClick={signOut}>Sign out</Button></li> : null}
