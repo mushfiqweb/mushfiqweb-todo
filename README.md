@@ -23,7 +23,7 @@ Quick Start
 -----------
 
 ```shell
-$ git clone https://github.com/r-park/todo-react-redux.git
+$ git clone https://github.com/mushfiqweb/mushfiqweb-todo.git
 $ cd todo-react-redux
 $ npm install
 $ npm start
@@ -33,7 +33,15 @@ $ npm start
 #### Prerequisites:
 - Create a free Firebase account at https://firebase.google.com
 - Create a project from your [Firebase account console](https://console.firebase.google.com)
-- Configure the authentication providers for your Firebase project from your Firebase account console
+- Configure the authentication providers for your Firebase project from your Firebase account console. Goto **Authentication** > **Sign-In Method** > **Sign-In Providers** and enable Google, Facebook, Github, & Twitter
+
+####Facebook App Id and Secret 
+- Goto [Facebook Developers](https://developers.facebook.com/) and create your own app. 
+![](https://i.imgur.com/ZVxY3kP.png)
+- Then put the information in **firebase**.
+![](https://i.imgur.com/Zkkcdc4.png)
+
+
 
 #### Configure this app with your project-specific details:
 ```json
