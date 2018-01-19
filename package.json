@@ -23,10 +23,11 @@
     "build:js": "cross-env NODE_PATH=. react-scripts build",
     "start": "run-p start:css start:js",
     "start:css": "npm run build:css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
-    "start:js": "set PORT=1900 && cross-env NODE_PATH=. react-scripts start"    
+    "start:js": "set PORT=1900 && cross-env NODE_PATH=. react-scripts start"
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "eslint": "^4.15.0",
     "firebase": "^4.1.3",
     "history": "^4.6.3",
     "immutable": "^3.8.1",
