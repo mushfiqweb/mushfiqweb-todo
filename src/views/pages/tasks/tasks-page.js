@@ -72,7 +72,7 @@ export class TasksPage extends Component {
           <TaskForm handleSubmit={this.props.createTask} />
         </div>
 
-        <div className="g-col">
+        <div className="g-col" style={{ minHeight: '69vh' }}>
           <TaskFilters filter={this.props.filterType} />
           <TaskList
             removeTask={this.props.removeTask}
