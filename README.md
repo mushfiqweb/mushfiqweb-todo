@@ -2,7 +2,7 @@
 # A Simple Todo app using Create React App, React Redux, and Firebase
 A simple Todo app example with **undelete** capability — built with [Create React App](https://github.com/facebookincubator/create-react-app), [React Redux](https://github.com/reactjs/react-redux), and [Firebase](https://firebase.google.com/).
 
-##Try the app @ https://mushfiqweb-todo.firebaseapp.com/ 
+##Try the app @ https://todo.mushfiqweb.com 
 
 
 ## Stack
